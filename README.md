@@ -18,7 +18,7 @@ After Install ,  need restart chrome or refresh the activate page for working
 
 * select the content you need: text or img
 
-* use the default short cut: `Alt + Shift + C`,
+* use the default short cut: `Alt + C`,
 * then you can paster the format markdown link to where you want
 
 Also, of course,  after you select your content, u can click the extension icon for working too.
