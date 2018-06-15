@@ -1,0 +1,17 @@
+{
+  "name": "markdown-clipboard",
+  "version": "1.0.0",
+  "description": "easy copy clipboard for markdown",
+  "main": "background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "https://github.com/onvno",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-uglify-es": "^1.0.4"
+  }
+}
