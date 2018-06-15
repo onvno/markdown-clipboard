@@ -16,7 +16,14 @@
     }],
 
     "browser_action": {
-        "default_title": "ClipBoard With Url!"
+        "default_title": "ClipBoard With Url!",
+        "default_icon": "markdown.png"
+    },
+
+    "icons": {
+        "128": "markdown.png",
+        "16": "markdown.png",
+        "48": "markdown.png"
     },
 
     "commands": {

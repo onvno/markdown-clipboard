@@ -20,6 +20,8 @@ gulp.task('copy', function(){
     return (function(){
         gulp.src('./manifest.json')
             .pipe(gulp.dest('./dist'));
+        gulp.src('./markdown.png')
+            .pipe(gulp.dest('./dist'));
     })()
 })
 
