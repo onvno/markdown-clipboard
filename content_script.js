@@ -13,6 +13,10 @@
 
 const handleClip = () => {
     var userSelection = window.getSelection();
+    // console.log(userSelection);
+    // console.log(userSelection.getRangeAt(0).cloneContents())
+    // debugger
+
     var selectCont = userSelection.toString().trim();
     var finalCont;
     
@@ -24,11 +28,23 @@ const handleClip = () => {
         if(selectCont.length == 0 ){
             finalCont = '[' + document.title.trim() + '](' + window.location.href +')';
         }
-        else if (selectCont.indexOf('http')>=0 || selectCont.indexOf('ftp')>=0) {
-            finalCont = '[Replace Text : MarkDown ClipBoard](' + selectCont + ')';
+        else if (selectCont.indexOf('http')==0 || selectCont.indexOf('ftp')==0) {
+            var httpWholeHref = 
+                userSelection.anchorNode.parentNode && userSelection.anchorNode.parentNode.href ? 
+                userSelection.anchorNode.parentNode.href :
+                userSelection.anchorNode.nextSibling && userSelection.anchorNode.nextSibling.href ?
+                userSelection.anchorNode.nextSibling.href :
+                selectCont
+            finalCont = '[Replace Text : MarkDown ClipBoard](' + httpWholeHref + ')';
+        }
+        else if (userSelection.anchorNode.parentNode && userSelection.anchorNode.parentNode.href) {
+            finalCont = '[' + userSelection + '](' + userSelection.anchorNode.parentNode.href + ')';
+        }
+        else if (userSelection.anchorNode.nextSibling && userSelection.anchorNode.nextSibling.href) {
+            finalCont = '[' + userSelection + '](' + userSelection.anchorNode.nextSibling.href + ')';
         }
         else {
-            finalCont = "[" + userSelection +  "](" + window.location.href + ")"
+            finalCont = '[' + userSelection +  '](' + window.location.href + ')'
         }
     }
     else if (userSelection.anchorNode.nodeType === 1) {
