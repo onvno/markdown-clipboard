@@ -2,6 +2,8 @@
 
 [中文文档](./READMECN.md)
 
+![](./markdown.png)
+
 Chrome Extension : Markdown Clipboard. 
 Copy Text & Img from Web Page , Easy Convert to Markdown syntax.
 
