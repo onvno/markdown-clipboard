@@ -22,6 +22,8 @@ gulp.task('copy', function(){
             .pipe(gulp.dest('./dist'));
         gulp.src('./markdown.png')
             .pipe(gulp.dest('./dist'));
+        gulp.src('./options.html')
+            .pipe(gulp.dest('./dist'));
     })()
 })
 

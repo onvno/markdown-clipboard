@@ -20,6 +20,8 @@
         "default_icon": "markdown.png"
     },
 
+    "options_page": "options.html",
+
     "icons": {
         "128": "markdown.png",
         "16": "markdown.png",
