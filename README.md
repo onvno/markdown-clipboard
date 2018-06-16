@@ -32,5 +32,5 @@ the clipboard returned info:
 * *Select Img*: `![img Alt Name](img link)`
 
 #### Different
-* select text inclues some text with link, return [select text](some text link)
+* select text inclues some text with link, return `[select text](some text link)`
 * select `http` link not complete, dont worry, return the whole url
