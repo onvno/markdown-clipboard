@@ -25,10 +25,11 @@ Of course,  after you select your content, click the extension icon also work.
 #### Support
 the clipboard returned info:
 
-* *Select Nothing*: [Document Title](Page Url)
-* *Select Link Text*: [Link Text](Link Url)
-* *Select Http Text*: [Default Text to Replace](Link Url)
-* *Select Img*: ![img Alt Name](img link)
+* *Select Nothing*: `[Document Title](Page Url)`
+* *Select Text*: `[Text](Page Url)`
+* *Select Link Text*: `[Link Text](Link Url)`
+* *Select Http Text*: `[Default Text to Replace](Link Url)`
+* *Select Img*: `![img Alt Name](img link)`
 
 #### Different
 * select text inclues some text with link, return [select text](some text link)
