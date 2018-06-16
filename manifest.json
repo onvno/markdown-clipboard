@@ -3,20 +3,15 @@
 
     "name": "markdown clipboard",
     "description": "copy content with md url format",
-    "version": "1.1.0",
+    "version": "1.2.0",
 
     "background": {
         "scripts": ["background.js"],
         "persistent": false
     },
 
-    "content_scripts": [{
-        "js": ["content_script.js"],
-        "matches": ["http://*/*", "https://*/*"]
-    }],
-
     "browser_action": {
-        "default_title": "ClipBoard With Url!",
+        "default_title": "markdown clipboard",
         "default_icon": "markdown.png"
     },
 
