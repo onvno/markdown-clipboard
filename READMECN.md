@@ -2,7 +2,7 @@
 
 [English](./README.md)
 
-![](./markdown.png)
+![](http://ww1.sinaimg.cn/large/63885f75ly1fsctxgmb3ej203k03k0si.jpg)
 
 Chrome 扩展 : Markdown Clipboard. 
 网页拷贝文本，链接，图片等，剪切板转为Markdown语法
